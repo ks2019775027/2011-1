@@ -1,0 +1,4 @@
+1.XAMPP 설치
+2.multi_login DB생성(phpmyadmin 이용)
+3.users table 생성(id,usrs 등등)
+4.htdoc 아래에 폴더(login-1.admin,2.images)

@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>Company</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="i.png" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">NAVER</a></li>
+				<li><a href="#movie" data-rel="dialog">GOOGLE KOREA</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog">NEXEN</a></li>
+				<li><a href="#gallery">GALLERY</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>Bae JuYeon</h1>
+		</div>
+	</div>
+	
+
+
+
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>NAVER</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="naver.jpg" width="100" height="100">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>Itroduce</h3>
+					<p>당사는 국내 1위 인터넷 검색 포털 '네이버(NAVER)'와 글로벌 모바일 메신저 '라인(LINE)' 등을 서비스하고 있음.
+
+인터넷 서비스를 기반으로 디스플레이 광고, 동영상 광고 등 광고 사업, 검색과 쇼핑 등 비즈니스 플랫폼 사업, 네이버페이, 클라우드, 라인웍스 등 IT플랫폼 사업, 웹툰, 뮤직 등 콘텐츠 서비스 사업 등을 함.
+
+지배회사인 네이버를 제외하고 동사에 속한 종속기업은 2019년 9월말 기준으로 38개사임.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Information</h3>
+					<p><li><strong>*본사 위치</strong></li></p>
+					<p>경기도 성남시 분당구 불정로 6</br>[지번]정자동 178-1</p>
+					 <a href="m.png" rel="external"><img src="m.png" width="100" height="100"></a>
+					 <li><strong>*전화</strong></li><p>1588-3830</p>
+					 <li><strong>*시간</strong></li><p>평일 10:00~19:00</p></p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>Career</h3>
+					<a href="https://recruit.navercorp.com/naver/recruitMain"><img class="portal" src="c.jpg" alt="네이버 이동"/ width="120"	height="80"></a>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>Bae JuYeon</h1>
+		</div>		
+	</div>
+	
+
+
+
+
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>GOOGLE KOREA</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="g.jpg" width="100" height="100">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>About Google</h3>
+					<p><a href="https://about.google/"><img src="q.png" width="120" height="90"></a></p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Information</h3>
+					<li><strong>*본사 위치</strong></li>
+					<p>서울특별시 강남구 역삼동 테헤란로 152<br>[지번]서울 강남구 역삼동 737 강남파이낸스센터 22층</p>
+					 <a href="mm.png" rel="external"><img src="mm.png" width="100" height="100"></a>
+					 <li><strong>*전화</strong></li><p>02-531-9000</p>
+					 <li><strong>*시간</strong></li><p>
+월요일	오전 9:00~오후 6:00<br>
+화요일	오전 9:00~오후 6:00<br>
+수요일	오전 9:00~오후 6:00<br>
+목요일	오전 9:00~오후 6:00금요일	오전 9:00~오후 6:00<br>토요일	휴무일<br>
+일요일	휴무일<br></p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>Career</h3>
+					<a href="https://careers.google.com/"><img class="portal" src="gg.png" alt="구글 이동"/ width="120"	height="120"></a>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>Bae JuYeon</h1>
+		</div>		
+	</div>
+	
+
+
+	<div data-role="page" id="wizard3-1" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>NEXEN KOREA</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="nn.jpg" width="100" height="100">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>Introduce</h3>
+					<p>1994년에 설립된 넥슨은 탄타난 개발력과 항상 '최초'를 추구하고 실현해 낸 크리에이티브를 바탕으로 대한민국 온라인 게임 산업을 선도해 온 글로벌 게임 업체입니다. </p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Information</h3>
+					<li><strong>*한국 지사 위치</strong></li>
+					<p>경기도 성남시 분당구 판교로256번길 7<br>[지번]삼평동 627</p>
+					 <a href="nex.png" rel="external"><img src="mm.png" width="100" height="100"></a>
+					 <li><strong>*전화</strong></li><p>
+1588-7701</p>
+					 <li><strong>*시간</strong></li><p>
+월요일	오전 9:00~오후 6:00<br>
+화요일	오전 9:00~오후 6:00<br>
+수요일	오전 9:00~오후 6:00<br>
+목요일	오전 9:00~오후 6:00<br>금요일	오전 9:00~오후 6:00<br>
+토요일	휴무일<br>
+일요일	휴무일
+</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>Career</h3>
+					<a href="https://career.nexon.com/user/recruit/notice/noticeList?joinCorp=NX"><img class="portal" src="nc.jpg" alt="넥슨 이동"/ width="120"	height="120"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>GALLERY</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="n1.jpg" rel="external"><img src="n1.jpg" /></a></li>	
+				<li><a href="n2.jpg" rel="external"><img src="n2.jpg" /></a></li>	
+				<li><a href="n3.jpg" rel="external"><img src="n3.jpg" /></a></li>	
+				<li><a href="g1.jpg" rel="external"><img src="g1.jpg" /></a></li>	
+				<li><a href="g3.jpg" rel="external"><img src="g3.jpg" /></a></li>	
+				<li><a href="e1.jpg" rel="external"><img src="e1.jpg" /></a></li>	
+				<li><a href="e2.jpg" rel="external"><img src="e2.jpg" /></a></li>	
+				<div data-role="content" >
+			<div class="ui-bar ui-bar-e">*넥슨 게임 영상 ex</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/Z3EOL9GDO18"></iframe></li>
+			<div class="ui-bar ui-bar-e">*구글 관련 영상 ex</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/6xSxXiHwMrg"></iframe></li><br/>
+		</div>
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>Bae JuYeon</h1>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>

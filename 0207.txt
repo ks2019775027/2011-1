@@ -1,0 +1,11 @@
+http://tcpschool.com/
+http://www.devkuma.com/
+https://wikidocs.net/
+
+1. jquery open api 
+2. 공공데이터 api 사용법
+
+
+1. https://www.sqlite.org/
+2. https://sqlitebrowser.org/
+
